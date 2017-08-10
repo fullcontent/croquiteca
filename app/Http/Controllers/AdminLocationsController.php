@@ -31,16 +31,16 @@
 			# START COLUMNS DO NOT REMOVE THIS LINE
 			$this->col = [];
 			$this->col[] = ["label"=>"Nome","name"=>"nome"];
-			$this->col[] = ["label"=>"TipoRocha","name"=>"tipoRocha"];
-			$this->col[] = ["label"=>"Cidade Id","name"=>"cidade_id","join"=>"cities,name"];
+			$this->col[] = ["label"=>"Tipo de Rocha","name"=>"tipoRocha"];
+			$this->col[] = ["label"=>"Cidade","name"=>"cidade_id","join"=>"cities,name"];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
 			$this->form[] = ['label'=>'Nome','name'=>'nome','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'TipoRocha','name'=>'tipoRocha','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Cidade Id','name'=>'cidade_id','type'=>'select2','width'=>'col-sm-10','datatable'=>'cities,name'];
-			$this->form[] = ['label'=>'Descricao','name'=>'descricao','type'=>'textarea','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Tipo de Rocha','name'=>'tipoRocha','type'=>'text','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Cidade','name'=>'cidade_id','type'=>'select2','width'=>'col-sm-10','datatable'=>'cities,name'];
+			$this->form[] = ['label'=>'Descrição','name'=>'descricao','type'=>'textarea','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Latitude','name'=>'latitude','type'=>'text','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Longitude','name'=>'longitude','type'=>'text','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Imagem','name'=>'imagem','type'=>'upload','width'=>'col-sm-10'];
