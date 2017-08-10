@@ -35,7 +35,7 @@
 			$this->col[] = ["label"=>"Graduacao","name"=>"graduacao"];
 			$this->col[] = ["label"=>"Exposicao","name"=>"exposicao"];
 			$this->col[] = ["label"=>"Setor","name"=>"sector_id","join"=>"sectors,nome"];
-			$this->col[] = ["label"=>"Local","name"=>"location_id","join"=>"location,nome"];
+			$this->col[] = ["label"=>"Local","name"=>"location_id","join"=>"locations,nome"];
 			$this->col[] = ["label"=>"AnoConquista","name"=>"anoConquista"];
 			$this->col[] = ["label"=>"Conquistadores","name"=>"conquistadores"];
 			# END COLUMNS DO NOT REMOVE THIS LINE
