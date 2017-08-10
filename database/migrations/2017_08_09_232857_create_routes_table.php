@@ -25,7 +25,7 @@ class CreateRoutesTable extends Migration
 
             $table->text('conquistadores')->nullable();
             $table->integer('anoConquista')->nullable();
-            $table->integer('tipo')->default(1);
+            $table->string('tipo')->default(1);
             $table->string('nome',100);
             $table->text('descricao');
             
