@@ -17,12 +17,15 @@ class CreateRoutesTable extends Migration
             $table->increments('id');
             $table->timestamps();
 
-            $table->integer('sector_id');
-            //$table->foreign('sector_id')->references('id')->on('sectors');
+            $table->integer('sector_id')->unsigned();
+            $table->foreign('sector_id')->references('id')->on('sectors');
+
+            $table->integer('location_id')->unsigned()->default(1);
+            $table->foreign('location_id')->references('id')->on('locations');
 
             $table->text('conquistadores')->nullable();
             $table->integer('anoConquista')->nullable();
-            $table->integer('tipo');
+            $table->integer('tipo')->default(1);
             $table->string('nome',100);
             $table->text('descricao');
             
