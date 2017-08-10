@@ -33,49 +33,55 @@
 			$this->col[] = ["label"=>"Nome","name"=>"nome"];
 			$this->col[] = ["label"=>"Tipo","name"=>"tipo"];
 			$this->col[] = ["label"=>"Graduacao","name"=>"graduacao"];
-			$this->col[] = ["label"=>"Sector Id","name"=>"sector_id","join"=>"sectors,id"];
+			$this->col[] = ["label"=>"Exposicao","name"=>"exposicao"];
+			$this->col[] = ["label"=>"Setor","name"=>"sector_id","join"=>"sectors,nome"];
+			$this->col[] = ["label"=>"Local","name"=>"location_id","join"=>"location,nome"];
 			$this->col[] = ["label"=>"AnoConquista","name"=>"anoConquista"];
 			$this->col[] = ["label"=>"Conquistadores","name"=>"conquistadores"];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
-			$this->form[] = ['label'=>'Sector Id','name'=>'sector_id','type'=>'select2','width'=>'col-sm-10','datatable'=>'sectors,nome'];
-			$this->form[] = ['label'=>'Conquistadores','name'=>'conquistadores','type'=>'textarea','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'AnoConquista','name'=>'anoConquista','type'=>'number','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Tipo','name'=>'tipo','type'=>'text','width'=>'col-sm-10'];
+
 			$this->form[] = ['label'=>'Nome','name'=>'nome','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Descricao','name'=>'descricao','type'=>'textarea','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Exposicao','name'=>'exposicao','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Graduacao','name'=>'graduacao','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Crux','name'=>'crux','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Altura','name'=>'altura','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Enfiadas','name'=>'enfiadas','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Protecao','name'=>'protecao','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Material','name'=>'material','type'=>'text','width'=>'col-sm-10'];
+
+			$this->form[] = ['label'=>'Setor','name'=>'sector_id','type'=>'select2','width'=>'col-sm-5','datatable'=>'sectors,nome'];
+			$this->form[] = ['label'=>'Local','name'=>'location_id','type'=>'select2','width'=>'col-sm-5','datatable'=>'locations,nome'];
+
+			$this->form[] = ['label'=>'Conquistadores','name'=>'conquistadores','type'=>'text','width'=>'col-sm-5'];
+			$this->form[] = ['label'=>'Ano','name'=>'anoConquista','type'=>'number','width'=>'col-sm-1'];
+			$this->form[] = ['label'=>'Tipo','name'=>'tipo','type'=>'select','width'=>'col-sm-3','dataenum'=>'Esportiva;Boulder;Tradicional'];
+			$this->form[] = ['label'=>'Descrição','name'=>'descricao','type'=>'textarea','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Exposição','name'=>'exposicao','type'=>'select','width'=>'col-sm-1','dataenum'=>'E1;E2;E3;E4;E5;E6;E7'];
+			$this->form[] = ['label'=>'Graduação','name'=>'graduacao','type'=>'text','width'=>'col-sm-1'];
+			$this->form[] = ['label'=>'Crux','name'=>'crux','type'=>'text','width'=>'col-sm-1'];
+			$this->form[] = ['label'=>'Altura','name'=>'altura','type'=>'number','width'=>'col-sm-1'];
+			$this->form[] = ['label'=>'Enfiadas','name'=>'enfiadas','type'=>'number','width'=>'col-sm-1'];
+			$this->form[] = ['label'=>'Proteção','name'=>'protecao','type'=>'text','width'=>'col-sm-2'];
+			$this->form[] = ['label'=>'Material','name'=>'material','type'=>'text','width'=>'col-sm-2'];
 			$this->form[] = ['label'=>'Dicas','name'=>'dicas','type'=>'textarea','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Croqui','name'=>'croqui','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'FonteDados','name'=>'fonteDados','type'=>'textarea','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Croqui','name'=>'croqui','type'=>'upload','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Fonte','name'=>'fonteDados','type'=>'textarea','width'=>'col-sm-10'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
 			//$this->form = [];
-			//$this->form[] = ["label"=>"Sector Id","name"=>"sector_id","type"=>"select2","required"=>TRUE,"validation"=>"required|integer|min:0","datatable"=>"sector,id"];
-			//$this->form[] = ["label"=>"Conquistadores","name"=>"conquistadores","type"=>"textarea","required"=>TRUE,"validation"=>"required|string|min:5|max:5000"];
-			//$this->form[] = ["label"=>"AnoConquista","name"=>"anoConquista","type"=>"number","required"=>TRUE,"validation"=>"required|integer|min:0"];
-			//$this->form[] = ["label"=>"Tipo","name"=>"tipo","type"=>"number","required"=>TRUE,"validation"=>"required|integer|min:0"];
-			//$this->form[] = ["label"=>"Nome","name"=>"nome","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
-			//$this->form[] = ["label"=>"Descricao","name"=>"descricao","type"=>"textarea","required"=>TRUE,"validation"=>"required|string|min:5|max:5000"];
-			//$this->form[] = ["label"=>"Exposicao","name"=>"exposicao","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
-			//$this->form[] = ["label"=>"Graduacao","name"=>"graduacao","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
-			//$this->form[] = ["label"=>"Crux","name"=>"crux","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
-			//$this->form[] = ["label"=>"Altura","name"=>"altura","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
-			//$this->form[] = ["label"=>"Enfiadas","name"=>"enfiadas","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
-			//$this->form[] = ["label"=>"Protecao","name"=>"protecao","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
-			//$this->form[] = ["label"=>"Material","name"=>"material","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
-			//$this->form[] = ["label"=>"Dicas","name"=>"dicas","type"=>"textarea","required"=>TRUE,"validation"=>"required|string|min:5|max:5000"];
-			//$this->form[] = ["label"=>"Croqui","name"=>"croqui","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
-			//$this->form[] = ["label"=>"FonteDados","name"=>"fonteDados","type"=>"textarea","required"=>TRUE,"validation"=>"required|string|min:5|max:5000"];
+			//$this->form[] = ['label'=>'Setor','name'=>'sector_id','type'=>'select2','width'=>'col-sm-10','datatable'=>'sectors,nome'];
+			//$this->form[] = ['label'=>'Conquistadores','name'=>'conquistadores','type'=>'textarea','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Ano','name'=>'anoConquista','type'=>'number','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Tipo','name'=>'tipo','type'=>'select2','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Nome','name'=>'nome','type'=>'text','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Descrição','name'=>'descricao','type'=>'textarea','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Exposição','name'=>'exposicao','type'=>'select2','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Graduação','name'=>'graduacao','type'=>'text','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Crux','name'=>'crux','type'=>'text','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Altura','name'=>'altura','type'=>'number','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Enfiadas','name'=>'enfiadas','type'=>'number','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Proteção','name'=>'protecao','type'=>'text','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Material','name'=>'material','type'=>'text','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Dicas','name'=>'dicas','type'=>'textarea','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Croqui','name'=>'croqui','type'=>'text','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Fonte','name'=>'fonteDados','type'=>'textarea','width'=>'col-sm-10'];
 			# OLD END FORM
 
 			/* 

@@ -17,22 +17,23 @@ class CreateRoutesTable extends Migration
             $table->increments('id');
             $table->timestamps();
 
-            $table->integer('sector_id');
-            //$table->foreign('sector_id')->references('id')->on('sectors');
+            $table->integer('sector_id')->unsigned();
+            $table->foreign('sector_id')->references('id')->on('sectors');
 
             $table->text('conquistadores')->nullable();
             $table->integer('anoConquista')->nullable();
-            $table->integer('tipo');
+            $table->enum('tipo', ['Esportiva','Boulder','Tradicional']);
+            
             $table->string('nome',100);
             $table->text('descricao');
+            $table->enum('exposicao', ['E1', 'E2', 'E3' , 'E4', 'E5', 'E6','E7','E8']);    
             
-            $table->string('exposicao',2)->nullable();
             $table->string('graduacao',5);
             $table->string('crux',5);
             $table->string('altura',3);
             $table->string('enfiadas',2);
-            $table->string('protecao');
-            $table->string('material');
+            $table->string('protecao')->nullable();
+            $table->string('material')->nullable();
             $table->text('dicas')->nullable();
             $table->string('croqui')->nullable();
 
