@@ -41,8 +41,9 @@
 			$this->form[] = ['label'=>'Tipo de Rocha','name'=>'tipoRocha','type'=>'text','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Cidade','name'=>'cidade_id','type'=>'select2','width'=>'col-sm-10','datatable'=>'cities,name'];
 			$this->form[] = ['label'=>'Descrição','name'=>'descricao','type'=>'textarea','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Latitude','name'=>'latitude','type'=>'text','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Longitude','name'=>'longitude','type'=>'text','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Localização','name'=>'endereco','type'=>'googlemaps','latitude'=>'lat','longitude'=>'lng'];
+
+			
 			$this->form[] = ['label'=>'Imagem','name'=>'imagem','type'=>'upload','width'=>'col-sm-10'];
 			# END FORM DO NOT REMOVE THIS LINE
 
