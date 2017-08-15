@@ -23,7 +23,7 @@ class CreateLocationsTable extends Migration
 
 
 
-           $table->string('endereco'); 
+           $table->string('endereco')->nullable(); 
            $table->text('descricao');
            $table->string('latitude')->nullable();
            $table->string('longitude')->nullable();
