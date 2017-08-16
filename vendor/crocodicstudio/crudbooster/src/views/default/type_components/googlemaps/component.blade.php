@@ -7,8 +7,8 @@
 
                 			<div class="input-group">
 						      <input type="text" class="form-control" id="{{$name}}" {{ ($readonly)?"readonly":"" }} {{ ($required)?"required":""}} value="{{$value}}" name="{{$name}}">
-						      <input type="hidden" name="latitude" id="input-latitude-{{$name}}" value="{{ ($form['latitude'])?$row->$form['latitude']:0 }}">
-						      <input type="hidden" name="longitude" id="input-longitude-{{$name}}" value="{{ ($form['longitude'])?$row->$form['longitude']:0 }}">
+						      <input type="hidden" name="input-latitude-{{$name}}" id="input-latitude-{{$name}}" value="{{ ($form['latitude'])?$row->$form['latitude']:0 }}">
+						      <input type="hidden" name="input-longitude-{{$name}}" id="input-longitude-{{$name}}" value="{{ ($form['longitude'])?$row->$form['longitude']:0 }}">
 						      <span class="input-group-btn">
 						        <button class="btn btn-primary" onclick="showMapModal{{$name}}()" type="button"><i class='fa fa-map-marker'></i> Browse Map</button>
 						      </span>
@@ -68,7 +68,11 @@
                 		  		console.log(address_temp_{{$name}});
                 		  		$('#{{$name}}').val(address_temp_{{$name}});
                 		  		$("#input-latitude-{{$name}}").val(latitude_temp_{{$name}});
-						        $("#input-longitude-{{$name}}").val(longitude_temp_{{$name}});	
+						        $("#input-longitude-{{$name}}").val(longitude_temp_{{$name}});
+
+
+						        $("#latitude").val(latitude_temp_{{$name}});
+						        $("#longitude").val(longitude_temp_{{$name}});	
                 		    }
 
                 			var is_init_map_{{$name}} = false;

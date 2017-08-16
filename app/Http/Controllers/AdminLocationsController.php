@@ -23,7 +23,7 @@
 			$this->button_detail = true;
 			$this->button_show = true;
 			$this->button_filter = true;
-			$this->button_import = false;
+			$this->button_import = true;
 			$this->button_export = false;
 			$this->table = "locations";
 			# END CONFIGURATION DO NOT REMOVE THIS LINE
@@ -41,7 +41,10 @@
 			$this->form[] = ['label'=>'Tipo de Rocha','name'=>'tipoRocha','type'=>'text','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Cidade','name'=>'cidade_id','type'=>'select2','width'=>'col-sm-10','datatable'=>'cities,name'];
 			$this->form[] = ['label'=>'Descrição','name'=>'descricao','type'=>'textarea','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Localização','name'=>'endereco','type'=>'googlemaps','latitude'=>'lat','longitude'=>'lng'];
+			$this->form[] = ['label'=>'Localização','name'=>'endereco','type'=>'googlemaps','latitude'=>'latitude','longitude'=>'longitude'];
+			$this->form[] = ['label'=>'Latitude','name'=>'latitude','type'=>'text','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Longitude','name'=>'longitude','type'=>'text','width'=>'col-sm-10'];
+
 
 			
 			$this->form[] = ['label'=>'Imagem','name'=>'imagem','type'=>'upload','width'=>'col-sm-10'];
@@ -155,7 +158,11 @@
 	        | $this->script_js = "function() { ... }";
 	        |
 	        */
-	        $this->script_js = NULL;
+	        $this->script_js = "
+	        	
+
+	        	
+	        ";
 
 
             /*
@@ -192,6 +199,8 @@
 	        */
 	        $this->load_js = array();
 	        
+
+
 	        
 	        
 	        /*
@@ -289,7 +298,8 @@
 	    | 
 	    */
 	    public function hook_before_edit(&$postdata,$id) {        
-	        //Your code here
+	       
+
 
 	    }
 

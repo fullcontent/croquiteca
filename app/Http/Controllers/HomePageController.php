@@ -13,17 +13,32 @@ class HomePageController extends Controller
 
 	public function Index(){
 
-
-		
-
-
-		return view('welcome');
+        return view('welcome');
 
 	}
 
 
 
-	public function loadJS(){
+    public function listaVias($location_id){
+
+
+        $vias = DB::table('routes')->where('location_id',$location_id)->get();
+
+
+        $vias = json_encode($vias, JSON_PRETTY_PRINT);
+
+        return $vias;
+
+
+    }
+	
+
+
+
+
+
+
+    public function loadJS(){
 
 		$locations = DB::table('locations')->get();
 

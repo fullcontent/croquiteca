@@ -19,3 +19,5 @@ Route::get('api', function() {
 });
 
 Route::get('/loadJS', 'HomePageController@loadJS');
+
+Route::get('listaVias/{location_id}', 'HomePageController@listaVias');

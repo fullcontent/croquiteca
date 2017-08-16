@@ -41,7 +41,10 @@
 			$this->form[] = ['label'=>'Nome','name'=>'nome','type'=>'text','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Descricao','name'=>'descricao','type'=>'textarea','width'=>'col-sm-10'];
 
-			$this->form[] = ['label'=>'Localização','name'=>'endereco','type'=>'googlemaps','latitude'=>'lat','longitude'=>'lng'];
+			$this->form[] = ['label'=>'Localização','name'=>'endereco','type'=>'googlemaps','latitude'=>'latitude','longitude'=>'longitude'];
+
+			$this->form[] = ['label'=>'Latitude','name'=>'latitude','type'=>'text','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Longitude','name'=>'longitude','type'=>'text','width'=>'col-sm-10'];
 			
 			$this->form[] = ['label'=>'ComoChegar','name'=>'comoChegar','type'=>'textarea','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Location Id','name'=>'location_id','type'=>'select2','width'=>'col-sm-10','datatable'=>'locations,nome'];

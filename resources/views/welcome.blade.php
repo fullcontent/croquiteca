@@ -10,31 +10,16 @@
       #map {
         height: 100%;
       }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
 
-       #info-box {
-        background-color: white;
-        border: 1px solid black;
-        bottom: 30px;
-        height: 20px;
-        padding: 10px;
-        position: absolute;
-        left: 30px;
-      }
+      
     </style>
-    <title>Laravel 5 - Multiple markers in google map using gmaps.js</title>
-  
+   
   
   </head>
   <body>
 
     <div id="map"></div>
-<div id="info-box">?</div>
+
   <script type="text/javascript">
 
    var map;
@@ -44,7 +29,7 @@
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     zoom: 10,
-    center: {lat: -28, lng: 137}
+    center: {lat: -25.5462011, lng: -49.2664437}
   });
 
   // NOTE: This uses cross-domain XHR, and may not work on older browsers.
@@ -57,10 +42,11 @@ function initMap() {
       map.data.addListener('click', function(event) {
           var name = event.feature.getProperty("name");
           var description = event.feature.getProperty("description");
+          var id = event.feature.getProperty("id");
 
 
-
-      infowindow2.setContent("<h2>"+name+"</h2><p>"+description+"</p>");
+ 
+      infowindow2.setContent("<h2>"+name+"</h2><p>"+description+"</p><a href=listaVias/"+id+">Listar Vias</a>");
           infowindow2.setPosition(event.feature.getGeometry().get());
       infowindow2.setOptions({pixelOffset: new google.maps.Size(0,-30)});
 
@@ -94,7 +80,7 @@ function initMap() {
       function handleLocationError(browserHasGeolocation, infoWindow, pos) {
         infoWindow.setPosition(pos);
         infoWindow.setContent(browserHasGeolocation ?
-                              'Error: The Geolocation service failed.' :
+                              'Ative a localização no seu navegador.' :
                               'Error: Your browser doesn\'t support geolocation.');
       }
 
