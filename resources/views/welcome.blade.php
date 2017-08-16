@@ -66,7 +66,7 @@ function initMap() {
             };
 
             infoWindow.setPosition(pos);
-            infoWindow.setContent('<center><p>Você foi encontrado!</p><p>Explore as áreas de escalada perto de você!</p></center>');
+            infoWindow.setContent('Location found.');
             map.setCenter(pos);
           }, function() {
             handleLocationError(true, infoWindow, map.getCenter());
@@ -80,13 +80,9 @@ function initMap() {
       function handleLocationError(browserHasGeolocation, infoWindow, pos) {
         infoWindow.setPosition(pos);
         infoWindow.setContent(browserHasGeolocation ?
-                              'Ative a localização no seu navegador.' :
+                              'Error: The Geolocation service failed.' :
                               'Error: Your browser doesn\'t support geolocation.');
       }
-
-       
-
-
 
 
     </script>
