@@ -20,4 +20,12 @@ Route::get('api', function() {
 
 Route::get('/loadJS', 'HomePageController@loadJS');
 
-Route::get('listaVias/{location_id}', 'HomePageController@listaVias');
+
+Route::get('locais/{local?}', 'HomePageController@listaLocais');
+Route::get('setores/{sector_id?}', 'HomePageController@listaVias')->name('setores');
+Route::post('setores/{sector_id?}', 'HomePageController@listaVias')->name('setores');
+
+
+Route::get('pesquisar', 'HomePageController@pesquisar');
+
+Route::post('pesquisar', 'HomePageController@pesquisar');
