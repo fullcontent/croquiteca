@@ -16,12 +16,12 @@
             // When the user clicks, open an infowindow
       map.data.addListener('click', function(event) {
           var name = event.feature.getProperty("name");
-          var description = event.feature.getProperty("description");
+          var routes_count = event.feature.getProperty("routes_count");
           var id = event.feature.getProperty("id");
 
 
  
-          infowindow2.setContent("<h4>"+name+"</h4><p>"+description+"</p><a href=<?=url('/locais')?>/"+id+">Listar Vias</a>");
+          infowindow2.setContent("<h4>"+name+"</h4><a href=<?=url('/locais')?>/"+id+">"+routes_count+" Vias</a>");
           infowindow2.setPosition(event.feature.getGeometry().get());
           infowindow2.setOptions({pixelOffset: new google.maps.Size(0,-30)});
 

@@ -52,7 +52,7 @@ body,html{overflow-x:hidden}footer{border-top:1px solid #ddd;padding:30px;margin
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="#">CROQUITECA</a>
+                  <a class="navbar-brand" href="<?=url('')?>">CROQUITECA</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->

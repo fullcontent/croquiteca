@@ -26,6 +26,14 @@ Route::get('setores/{sector_id?}', 'HomePageController@listaVias')->name('setore
 Route::post('setores/{sector_id?}', 'HomePageController@listaVias')->name('setores');
 
 
+
+
 Route::get('pesquisar', 'HomePageController@pesquisar');
 
 Route::post('pesquisar', 'HomePageController@pesquisar');
+
+Route::get('/template', function() {
+
+	return view('home');
+    //
+});

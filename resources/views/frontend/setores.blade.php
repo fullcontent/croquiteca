@@ -33,14 +33,14 @@
     <div class="col-sm-6 col-lg-8">
         
         
-          <p class="lead text-muted">{{$setor->nome}}</p>
+          
           <table class="table table-bordered" data-effect="fade">
               <thead>
                 <tr>
-                  <th>#</th>
-                  <th>Nome</th>
-                  <th>Graduação</th>
-                  <th></th>
+                  <th width="1%" nowrap="nowrap">#</th>
+                  <th >Nome</th>
+                  <th width="1%" nowrap="nowrap">Graduação</th>
+                  <th width="1%" nowrap="nowrap"></th>
                 </tr>
               </thead>
               <tbody>
@@ -54,7 +54,11 @@
                @endforeach
               </tbody>
             </table>
+            {!! $vias->render() !!}
     </div>
+
+
+
 
 
 

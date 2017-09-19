@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use DB;
+use App\Models\Sector;
+use App\Models\Location;
 use Illuminate\Support\Facades\Input;
 
 
@@ -16,20 +18,12 @@ class HomePageController extends Controller
 
 
 
-
-        $vias = DB::table('routes')
-                        ->join('sectors','routes.sector_id','=','sectors.id')
-                        ->join('locations','sectors.location_id','=','locations.id')
-                        ->join('cities','locations.cidade_id','=','cities.id')
-                        ->join('states','cities.state_id','=','states.id')
-                        ->select('routes.*','sectors.nome as setor','cities.name as cidade','locations.nome as local','states.abbr as estado') 
-                    ->paginate(5);
-
+        $locations = Location::withCount(['sectors','routes'])->whereHas('routes')->get();
         
 
 
 
-        return view('frontend.home',compact('vias'));
+        return view('frontend.home')->with(['locations'=>$locations]);
 
 	}
 
@@ -52,7 +46,7 @@ class HomePageController extends Controller
 
         $setor = DB::table('sectors')->where('id','=',$sector_id)->first();
 
-        $vias = DB::table('routes')->where('sector_id','=',$sector_id)->get();
+        $vias = DB::table('routes')->where('sector_id','=',$sector_id)->paginate(5);
 
 
 
@@ -63,23 +57,8 @@ class HomePageController extends Controller
 
     public function listaSetores(){
 
-
-             $setores = DB::table('routes')
-                        
-                        // ->join('locations','sectors.location_id','=','locations.id')
-                        // ->join('cities','locations.cidade_id','=','cities.id')
-                    // ->join('states','cities.state_id','=','states.id')  
-                        ->join('sectors','sectors.id','=','routes.sector_id')
-                        
-                        ->select('sectors.nome','routes.sector_id')
-                        ->selectRaw('count(routes.sector_id) as counter')
-                        ->groupBy('routes.sector_id','sectors.nome')     
-                        ->get();
-
-                           // dd($setores);
-
-     
-            return view('frontend.setores', compact('setores'));
+            $sectors = Sector::withCount('routes')->with('routes')->get();
+            return view('frontend.setores')->with('setores', $sectors);
 
     }
 
@@ -87,11 +66,11 @@ class HomePageController extends Controller
     public function listaVias2($sector_id=''){
 
 
-         $setores = DB::table('routes')
+        $setores = DB::table('routes')
                         
                         // ->join('locations','sectors.location_id','=','locations.id')
                         // ->join('cities','locations.cidade_id','=','cities.id')
-                    // ->join('states','cities.state_id','=','states.id')  
+                        // ->join('states','cities.state_id','=','states.id')  
                         ->join('sectors','sectors.id','=','routes.sector_id')
                         
                         ->select('sectors.nome','routes.sector_id')
@@ -155,20 +134,13 @@ class HomePageController extends Controller
     }
 
 
-    public function show($id){
 
-
-
-            
-
-
-    }
 
 
 
     public function loadJS(){
 
-		$locations = DB::table('locations')->get();
+		$locations = Location::withCount(['sectors','routes'])->whereHas('routes')->get();
 
         $original_data = json_decode($locations, true);
         $features = array();
@@ -177,7 +149,7 @@ class HomePageController extends Controller
             $features[] = array(
                     'type' => 'Feature',
                     'geometry' => array('type' => 'Point', 'coordinates' => array((float)$value['longitude'],(float)$value['latitude'])),
-                    'properties' => array('name' => $value['nome'], 'id' => $value['id'], 'description' => $value['descricao']),
+                    'properties' => array('name' => $value['nome'], 'id' => $value['id'], 'description' => $value['descricao'], 'routes_count'=>$value['routes_count']),
                     );
             };   
 
