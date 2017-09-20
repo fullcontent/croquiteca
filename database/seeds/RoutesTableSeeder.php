@@ -592,6 +592,29 @@ class RoutesTableSeeder extends Seeder
                 'croqui' => 'uploads/2017-08/femerj/img0706.pdf',
                 'fonteDados' => 'Croquiteca CEC/FEMERJ',
             ),
+            25 => 
+            array (
+                'id' => 654,
+                'created_at' => '2017-09-19 13:43:50',
+                'updated_at' => NULL,
+                'sector_id' => 10,
+                'location_id' => 7,
+                'conquistadores' => 'Cauí Vieira, Heraldo G, Luciano W',
+                'anoConquista' => '2010',
+                'tipo' => 'Esportiva',
+                'nome' => 'Faixa de Gaza',
+                'descricao' => 'A via pode ser dividida em duas partes: chaminé/canaleta vertical e rampões. Na primeira parte sobe-se um trepa-mato até o platô onde se encorda e sobe duas enfiadas de canaletas/chaminé, a primeira protegida com móveis grandes, a segunda em fixo. A partir daí são 3 enfiadas mais expostas, rampões até o cume, e só existem grampos nas paradas, que são simples.',
+                'exposicao' => 'E3',
+                'graduacao' => 'III',
+                'crux' => 'VIsup',
+                'altura' => '150',
+                'enfiadas' => '3',
+                'protecao' => 'Chapeletas',
+            'material' => '11 Costuras, 01 corda de 60m, Friends grandes (#4 ao 7)',
+                'dicas' => '',
+                'croqui' => 'uploads/2017-09/faixadegaza.jpg',
+                'fonteDados' => 'Guia de escalada de Brejo da Madre de Deus',
+            ),
         ));
         
         

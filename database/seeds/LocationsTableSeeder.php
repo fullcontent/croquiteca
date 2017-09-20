@@ -47,7 +47,7 @@ O sitio do senhor Zezinho recebe bem os visitantes e ainda conta com uma pequena
             array (
                 'id' => 2,
                 'created_at' => '2017-08-10 00:23:52',
-                'updated_at' => '2017-08-15 15:27:16',
+                'updated_at' => '2017-08-16 15:00:00',
                 'nome' => 'Morro da Enseada',
                 'tipoRocha' => 'Granito',
                 'cidade_id' => 4216206,
@@ -55,13 +55,13 @@ O sitio do senhor Zezinho recebe bem os visitantes e ainda conta com uma pequena
                 'descricao' => 'O morro da enseada concentra o maior numero de setores da Zona Praias, são cinco os principais.',
                 'latitude' => '-26.2222020039235',
                 'longitude' => '-48.497888015283195',
-                'imagem' => NULL,
+                'imagem' => 'uploads/2017-08/mirante-do-morro-da-campina.jpg',
             ),
             2 => 
             array (
                 'id' => 3,
                 'created_at' => '2017-08-10 09:04:34',
-                'updated_at' => '2017-08-15 15:14:12',
+                'updated_at' => '2017-08-16 15:17:59',
                 'nome' => 'São Luiz do Purunã',
                 'tipoRocha' => 'Arenito',
                 'cidade_id' => 4102307,
@@ -69,13 +69,13 @@ O sitio do senhor Zezinho recebe bem os visitantes e ainda conta com uma pequena
                 'descricao' => 'O arenito de São Luis do Purunã concentra centenas de vias de alta qualidade em seis setores. Além das vias super esportivas, ainda há uma grande concentração de vias em móvel fazendo de São Luis um campo escola de escalada avançado com muitas possibilidades. Infelizmente, mesmo com tanta importância para a escalada de Curitiba, o local sofre com vários problemas.',
                 'latitude' => '-25.4621335',
                 'longitude' => '-49.710104',
-                'imagem' => NULL,
+                'imagem' => 'uploads/2017-08/112ut-132749-705547442.jpg',
             ),
             3 => 
             array (
                 'id' => 4,
                 'created_at' => '2017-08-10 09:10:11',
-                'updated_at' => '2017-08-15 15:28:27',
+                'updated_at' => '2017-08-16 15:21:44',
                 'nome' => 'Parque Estadual Pico Paraná',
                 'tipoRocha' => 'Granito',
                 'cidade_id' => 4101200,
@@ -83,13 +83,13 @@ O sitio do senhor Zezinho recebe bem os visitantes e ainda conta com uma pequena
                 'descricao' => 'O Pico Paraná é a montanha mais alta da Região Sul do Brasil, formação rochosa de Granito e Gnaisse, entre o município de Antonina e Campina Grande do Sul, no conjunto de serra chamado Ibitiraquire. A vegetação é composta em quase sua totalidade em Floresta Ombrófila Densa Montana e Alto-Montana e de refúgios ecológicos.',
                 'latitude' => '-25.2522953',
                 'longitude' => '-48.80929119999996',
-                'imagem' => NULL,
+                'imagem' => 'uploads/2017-08/normal-pico-do-paran-2.jpg',
             ),
             4 => 
             array (
                 'id' => 5,
                 'created_at' => '2017-08-15 16:07:09',
-                'updated_at' => '2017-08-15 16:10:33',
+                'updated_at' => '2017-08-16 15:04:26',
                 'nome' => 'Urca',
                 'tipoRocha' => 'Gnaisse',
                 'cidade_id' => 3304557,
@@ -97,13 +97,13 @@ O sitio do senhor Zezinho recebe bem os visitantes e ainda conta com uma pequena
                 'descricao' => 'A Urca, no Rio de Janeiro, é o mais conhecido e tradicional centro de escalada do Brasil. São 325 vias e variantes no Pão de Açúcar, Morro da Urca, Morro da Babilônia, Parede dos Ácidos e Pedra do Urubu, além de muitos boulders.',
                 'latitude' => '-22.954378',
                 'longitude' => '-43.16758809999999',
-                'imagem' => NULL,
+                'imagem' => 'uploads/2017-08/urca.jpg',
             ),
             5 => 
             array (
                 'id' => 6,
                 'created_at' => '2017-08-15 16:09:31',
-                'updated_at' => '2017-08-15 16:10:41',
+                'updated_at' => '2017-08-16 15:15:22',
                 'nome' => 'São Conrado',
                 'tipoRocha' => 'Gnaisse',
                 'cidade_id' => 3304557,
@@ -111,7 +111,21 @@ O sitio do senhor Zezinho recebe bem os visitantes e ainda conta com uma pequena
                 'descricao' => '',
                 'latitude' => '-22.995099377310275',
                 'longitude' => '-43.28040042812506',
-                'imagem' => NULL,
+                'imagem' => 'uploads/2017-08/bairro-de-sao-conrado.jpg',
+            ),
+            6 => 
+            array (
+                'id' => 7,
+                'created_at' => '2017-09-19 13:38:58',
+                'updated_at' => NULL,
+                'nome' => 'Brejo da Madre de Deus',
+                'tipoRocha' => 'Batólito',
+                'cidade_id' => 2602605,
+                'endereco' => 'Brejo da Me. de Deus PE BR',
+                'descricao' => '',
+                'latitude' => '',
+                'longitude' => '',
+                'imagem' => 'uploads/2017-09/dsc06995.JPG',
             ),
         ));
         

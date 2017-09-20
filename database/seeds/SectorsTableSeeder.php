@@ -156,6 +156,20 @@ A caminhada ao cume dura aproximadamente 3:30h e do alto é possível avistar pr
                 'location_id' => 5,
                 'imagem' => '',
             ),
+            9 => 
+            array (
+                'id' => 10,
+                'created_at' => '2017-09-19 13:40:21',
+                'updated_at' => NULL,
+                'nome' => 'Pedra da Bomba',
+                'descricao' => '',
+                'endereco' => '',
+                'latitude' => '-8.128070590112818',
+                'longitude' => '-36.3496506298859',
+                'comoChegar' => 'Para chegar à pedra da Bomba, pegue uma estrada de terra à norte no trevo da cidade, sentido Cacimba de Pedro, em seguida vire a direita p/ Baixinha, após o povoado, de onde já se vê a pedra, pega-se uma estrada para o Sítio Serra Rasa de Baixo, onde passa duas porteiras e pare o carro perto de uma casa rosa, a trilha inicia-se atrás dessa casa e dura aproximadamente 20min.',
+                'location_id' => 7,
+                'imagem' => '',
+            ),
         ));
         
         
