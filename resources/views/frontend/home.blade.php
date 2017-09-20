@@ -52,8 +52,10 @@
                 <div id="location">
                     <h3>Estado</h3>
                     <ul class="list-unstyled lista-locais">
-                        <li>Setor Nome<span class="number"> (100) </span></li>
-                        <li>Setor Nome<span class="number"> (100) </span></li>
+                        <li>Local Nome<span class="number"> (100) </span></li>
+                        <li>Local Nome<span class="number"> (100) </span></li>
+                        <li>Mais<span class="number"> (...) </span></li>
+
                     </ul>
                 </div>
                 @endfor
