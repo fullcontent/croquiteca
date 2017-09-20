@@ -21,7 +21,8 @@
                   <th>Setor</th>
                   <th>Cidade</th>
                   <th>Estado</th>
-                  <th>actions</th>
+                  <th>Croqui</th>
+                  <th></th>
                 </tr>
               </thead>
               <tbody>
@@ -36,7 +37,8 @@
                   <td>{{$via->local}}</td>
                   <td>{{$via->cidade}}</td>
                   <td>{{$via->estado}}</td>
-                  <td>botao</td>
+                  <td><a href="<?=url('/')?>/{{$via->croqui}}" target="_blank"><button class="btn btn-default" type="button">Croqui</button></a></td>
+                  <td><a href="via/{{ $via->id }}"><button class="btn btn-default" type="button">Detalhes</button></a></td>
                 </tr>
                @endforeach
               </tbody>

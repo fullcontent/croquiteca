@@ -49,7 +49,7 @@
                   <td>{{$via->id}}</td>
                   <td>{{$via->nome}}</td>
                   <td>{{$via->graduacao}}</td>
-                  <td>DETALHES</td>
+                  <td><a href="<?=url('/')?>/via/{{ $via->id }}">visualizar</a></td>
                 </tr>
                @endforeach
               </tbody>

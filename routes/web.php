@@ -22,6 +22,10 @@ Route::get('/loadJS', 'HomePageController@loadJS');
 
 
 Route::get('locais/{local?}', 'HomePageController@listaLocais');
+Route::get('via/{id?}', 'HomePageController@detalheVia');
+
+
+
 Route::get('setores/{sector_id?}', 'HomePageController@listaVias')->name('setores');
 Route::post('setores/{sector_id?}', 'HomePageController@listaVias')->name('setores');
 
@@ -31,9 +35,3 @@ Route::post('setores/{sector_id?}', 'HomePageController@listaVias')->name('setor
 Route::get('pesquisar', 'HomePageController@pesquisar');
 
 Route::post('pesquisar', 'HomePageController@pesquisar');
-
-Route::get('/template', function() {
-
-	return view('home');
-    //
-});

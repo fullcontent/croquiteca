@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use DB;
 use App\Models\Sector;
 use App\Models\Location;
+use App\Models\Route;
+use App\Models\State;
 use Illuminate\Support\Facades\Input;
 
 
@@ -19,11 +21,13 @@ class HomePageController extends Controller
 
 
         $locations = Location::withCount(['sectors','routes'])->whereHas('routes')->get();
-        
+
+        $states = Location::withCount(['sectors','routes'])->whereHas('routes')->get();
 
 
+        $routes = Route::take(10)->get();
 
-        return view('frontend.home')->with(['locations'=>$locations]);
+        return view('frontend.home')->with(['locations'=>$locations,'routes'=>$routes]);
 
 	}
 
@@ -103,6 +107,14 @@ class HomePageController extends Controller
 
         return view('frontend.locais',compact('locais'));
 
+    }
+
+
+    public function detalheVia($id=''){
+
+        $dados = Route::where('id','=',$id)->first();
+
+        return view('frontend.detalhe',compact('dados'));
     }
 
 

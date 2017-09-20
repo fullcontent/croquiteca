@@ -1,0 +1,104 @@
+ul.list-unstyled.lista-locais{
+  padding-left:20px;
+  line-height:25px;
+}
+
+span.number{
+  color:#ccc;
+}
+
+div.col-md-3.lista-locais{
+  max-height:400px;
+}
+
+div.col-md-9.map{
+  height:400px;
+}
+
+div.row.box1{
+  background-color:rgba(204,204,204,0.2);
+  padding:25px;
+}
+
+span.ranking{
+  margin-left:50px;
+}
+
+div.image{
+  width:150px;
+  display:block;
+  float:left;
+  margin-top:10px;
+}
+
+div.images{
+  display:inline-block;
+}
+
+input.form-control{
+  width:20px;
+}
+
+h2{
+  font-family:'Roboto Condensed';
+}
+
+body{
+  font-family:'Roboto Condensed';
+  font-size:14px;
+  line-height:1.42857143;
+  color:#333;
+  background-color:#fff;
+}
+
+.navbar-brand{
+  float:left;
+  height:50px;
+  padding:0 15px;
+  font-size:18px;
+  line-height:20px;
+}
+
+.navbar{
+  position:relative;
+  min-height:80px;
+  border:1px solid transparent;
+}
+
+.nav{
+  padding-left:20px;
+  margin-bottom:0;
+  list-style:none;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+  color:#9d9d9d;
+  line-height:50px;
+  height:80px;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+  border-color:#101010;
+  line-height:40px;
+}
+
+ol.ultimas-vias{
+  list-style-type:none;
+  padding-top:10px;
+}
+
+@media (min-width:768px) {
+  .navbar-nav{
+    float:left;
+    margin:0;
+  }
+}
+
+.navbar-form{
+  padding:10px 15px;
+  margin-top:8px;
+  margin-right:-15px;
+  margin-bottom:8px;
+  margin-left:-15px;
+}
+

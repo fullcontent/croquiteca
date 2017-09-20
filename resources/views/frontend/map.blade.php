@@ -68,4 +68,4 @@ if (navigator.geolocation) {
      
     </script>
 
-    <div class="jumbotron" id="map"></div>
+    <div class="col-md-10 map" id="map"></div>
