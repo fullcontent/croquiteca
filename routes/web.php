@@ -14,24 +14,17 @@
 
 
 Route::get('/', 'HomePageController@Index');
-Route::get('api', function() {
-    return view('api');
-});
-
-Route::get('/loadJS', 'HomePageController@loadJS');
 
 
-Route::get('locais/{local?}', 'HomePageController@listaLocais');
-Route::get('via/{id?}', 'HomePageController@detalheVia');
-
-
-
-Route::get('setores/{sector_id?}', 'HomePageController@listaVias')->name('setores');
-Route::post('setores/{sector_id?}', 'HomePageController@listaVias')->name('setores');
 
 
 
 
 Route::get('pesquisar', 'HomePageController@pesquisar');
-
 Route::post('pesquisar', 'HomePageController@pesquisar');
+
+
+
+//Mapa
+
+Route::get('/listLocais', 'MapController@listLocais');

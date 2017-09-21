@@ -9,7 +9,7 @@
 
         // NOTE: This uses cross-domain XHR, and may not work on older browsers.
         map.data.loadGeoJson(
-            '<?=url('loadJS')?>');
+            '<?=url('listLocais')?>');
 
         var infowindow2 = new google.maps.InfoWindow({maxWidth: 400});
 
@@ -68,4 +68,4 @@ if (navigator.geolocation) {
      
     </script>
 
-    <div class="col-md-10 map" id="map"></div>
+    <div class="col-md-9 map" id="map"></div>

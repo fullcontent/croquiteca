@@ -37,4 +37,14 @@ class State extends Model
 
     }
 
+    public function locations()
+    {
+
+        return $this->hasManyThrough('App\Models\Location','App\Models\City','state_id','cidade_id','id');
+    }
+
+
+    
+ 
+
 }

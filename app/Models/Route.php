@@ -11,4 +11,8 @@ class Route extends Model
 
     	return $this->belongsTo('App\Models\Sector');
     }
+
+
+    
+
 }

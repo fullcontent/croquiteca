@@ -44,21 +44,24 @@
 <div class="row">
            
 			
-            <div class="col-md-2 lista-locais">
+            <div class="col-md-3 lista-locais">
                 
                 
 
-                @for($i = 0; $i < 4; $i++)
+                @foreach($states as $s)                
                 <div id="location">
-                    <h3>Estado</h3>
+                        <a href="{{$s->name}}" class="text-muted"><h3>{{$s->name}}</h3></a>
                     <ul class="list-unstyled lista-locais">
-                        <li>Local Nome<span class="number"> (100) </span></li>
-                        <li>Local Nome<span class="number"> (100) </span></li>
-                        <li>Mais<span class="number"> (...) </span></li>
+
+                        @foreach($s->locations as $l)
+                        <a href="setor/{{$l->id}}" class="text-muted"><li>{{$l->nome}}<span class="number"></span></li></a>
+                        @endforeach
+                        
 
                     </ul>
                 </div>
-                @endfor
+                @endforeach
+                
                 
                
             </div>
@@ -69,19 +72,7 @@
 
 <div class="row">
                 
-				@for($i = 0; $i < 15; $i++)
-            		    		
-                <div id="location" class="col-md-2">
-                    <h3>Estado</h3>
-                    <ul class="list-unstyled lista-locais">
-                        <li>Setor Nome<span class="number"> (100) </span></li>
-                        <li>Setor Nome<span class="number"> (100) </span></li>
-                        <li>Setor Nome<span class="number"> (100) </span></li>
-                        <li>Setor Nome<span class="number"> (100) </span></li>
-                    </ul>
-                </div>
-                
-                @endfor
+				
               
                
 </div>

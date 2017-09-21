@@ -18,10 +18,17 @@ public function routes(){
 	 return $this->hasManyThrough('App\Models\Route', 'App\Models\Sector', 'location_id', 'sector_id', 'id');
 }
 
-public function location(){
 
-	return $this->belongsTo('App\Models\City');
+public function city(){
+
+	return $this->hasOne('App\Models\City','id','cidade_id');
 }
+
+public function state(){
+
+	return $this->belongsTo('App\Models\State');
+}
+
 
 
 }

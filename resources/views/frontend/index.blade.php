@@ -39,9 +39,8 @@
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav">
                         <li class="{{ Request::path() == '/' ? 'active' : '' }}" role="presentation"><a href="<?=url('/')?>">Guia </a></li>
-                        <li class="{{ Request::path() == 'locais' ? 'active' : '' }}" role="presentation"><a href="<?=url('/locais')?>">Locais </a></li>
-                        <li role="presentation"><a href="#">Parcerias </a></li>
-                        <li role="presentation"><a href="#">Contato </a></li>
+                        
+                        
                     </ul>
                     <form class="navbar-form navbar-right" action="<?=url('pesquisar');?>">
                         <input class="form-control" type="text" placeholder="Pesquisar qualquer coisa" name="texto">
@@ -61,7 +60,9 @@
 
 
  <div class="clearfix"></div>
-    <footer></footer>
+    <footer>
+        <p>@2017 OndeEscalar.com.br</p>
+    </footer>
 <script src="<?=url('assets/js/jquery.js')?>"></script>
 <script src="<?=url('assets/js/bootstrap.min.js')?>"></script>
 
