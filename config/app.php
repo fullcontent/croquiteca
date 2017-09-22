@@ -177,12 +177,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-<<<<<<< HEAD
-        Orangehill\Iseed\IseedServiceProvider::class
+        Orangehill\Iseed\IseedServiceProvider::class,
 
-=======
+
         crocodicstudio\crudbooster\CRUDBoosterServiceProvider::class,
->>>>>>> v1.1
+
 
 
     ],
