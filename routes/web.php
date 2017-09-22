@@ -11,6 +11,27 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+Route::get('/', 'HomePageController@Index');
+
+Route::get('/mapa', 'HomePageController@Mapa');
+Route::get('/local/{id?}', 'HomePageController@Local');
+Route::get('/local/{id?}/setores', 'HomePageController@LocalSetores');
+Route::get('/locais/{id?}', 'HomePageController@Locais');
+
+
+Route::get('/via/{id?}', 'HomePageController@Via');
+
+
+
+
+
+Route::get('pesquisar', 'HomePageController@pesquisar');
+Route::post('pesquisar', 'HomePageController@pesquisar');
+
+
+
+//Mapa
+
+Route::get('/listLocais', 'MapController@listLocais');

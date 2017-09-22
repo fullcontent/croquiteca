@@ -21,11 +21,18 @@ class LocationsTableSeeder extends Seeder
             array (
                 'id' => 1,
                 'created_at' => '2017-08-10 00:08:42',
+<<<<<<< HEAD
                 'updated_at' => '2017-08-15 15:21:20',
                 'nome' => 'Morro do Canal',
                 'tipoRocha' => 'Granito',
                 'cidade_id' => 4120804,
                 'endereco' => 'Morro do Canal Vila Fuck Piraquara',
+=======
+                'updated_at' => '2017-08-10 00:10:38',
+                'nome' => 'Morro do Canal',
+                'tipoRocha' => 'Granito',
+                'cidade_id' => 4120804,
+>>>>>>> v1.1
                 'descricao' => 'O Morro do Canal é a primeira montanha, no lado do Planalto da Serra do Marumbi. Atualmente ele faz parte do Parque Estadual do Marumbi após a recente expansão desta unidade de Conservação. Na prática, no entanto, a montanha está situada dentro de uma propriedade particular, onde o dono, Sr. Zezinho permite a passagem de montanhistas sem problemas.
 
 O Canal é uma das montanhas mais fáceis da Serra do Mar em termos montanhísticos. Suas trilhas são bem sinalizadas, sendo praticamente urbanas de tanta intervenção de melhorias que recebeu. 
@@ -39,14 +46,21 @@ Para quem gosta de caminhar, o morro oferece um circuito, subindo pelo Morro can
 Uma boa alternativa é ir para o morro de bicicleta. Como o caminho percorre o alto Iguaçu, boa parte do percurso é plano e bastante prazeroso em meio às estradinhas de terra do caminho trentino.
 
 O sitio do senhor Zezinho recebe bem os visitantes e ainda conta com uma pequena infraestrutura com lanchonete e sorveteria.',
+<<<<<<< HEAD
                 'latitude' => '-25.5150819',
                 'longitude' => '-48.981664199999955',
                 'imagem' => 'uploads/2017-08/183ut-200308-705547442.jpg',
+=======
+                'latitude' => '-25.515077',
+                'longitude' => '-48.9838529',
+                'imagem' => NULL,
+>>>>>>> v1.1
             ),
             1 => 
             array (
                 'id' => 2,
                 'created_at' => '2017-08-10 00:23:52',
+<<<<<<< HEAD
                 'updated_at' => '2017-08-16 15:00:00',
                 'nome' => 'Morro da Enseada',
                 'tipoRocha' => 'Granito',
@@ -126,6 +140,16 @@ O sitio do senhor Zezinho recebe bem os visitantes e ainda conta com uma pequena
                 'latitude' => '',
                 'longitude' => '',
                 'imagem' => 'uploads/2017-09/dsc06995.JPG',
+=======
+                'updated_at' => NULL,
+                'nome' => 'Morro da Enseada',
+                'tipoRocha' => 'Granito',
+                'cidade_id' => 4216206,
+                'descricao' => 'O morro da enseada concentra o maior numero de setores da Zona Praias, são cinco os principais.',
+                'latitude' => '',
+                'longitude' => '',
+                'imagem' => NULL,
+>>>>>>> v1.1
             ),
         ));
         
