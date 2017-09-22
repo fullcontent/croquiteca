@@ -24,7 +24,10 @@ class SectorsTableSeeder extends Seeder
                 'updated_at' => '2017-08-10 01:00:51',
                 'nome' => 'Setor Bienal',
                 'descricao' => '',
+<<<<<<< HEAD
                 'endereco' => NULL,
+=======
+>>>>>>> v1.1
                 'latitude' => '',
                 'longitude' => '',
                 'comoChegar' => 'O Setor Bienal pode ser acessado de duas maneiras:
@@ -38,12 +41,20 @@ Para esse segundo acesso, siga a trilha principal do morro, passando pela Pedra 
             array (
                 'id' => 2,
                 'created_at' => '2017-08-10 00:24:52',
+<<<<<<< HEAD
                 'updated_at' => '2017-08-15 15:26:04',
                 'nome' => 'Canto Esquerdo',
                 'descricao' => 'O setor é de fácil acesso e recomenda-se escalar no periodo da maré baixa',
                 'endereco' => 'Av. Brasília, 752-820 - Praia da Enseada, São Francisco do Sul - SC, 89240-000, Brasil',
                 'latitude' => '-26.228731852647506',
                 'longitude' => '-48.498465924606364',
+=======
+                'updated_at' => NULL,
+                'nome' => 'Canto Esquerdo',
+                'descricao' => 'O setor é de fácil acesso e recomenda-se escalar no periodo da maré baixa',
+                'latitude' => '',
+                'longitude' => '',
+>>>>>>> v1.1
                 'comoChegar' => 'Trilha tal',
                 'location_id' => 2,
                 'imagem' => '',
@@ -57,7 +68,10 @@ Para esse segundo acesso, siga a trilha principal do morro, passando pela Pedra 
                 'descricao' => 'Até pouco tempo atrás o setor Aderência contava com apenas uma via.
 Recentemente foi melhor desenvolvido e hoje conta com 4 vias. Além disso, podem ser exploradas novas possibilidades, com escaladas variantes mesclando e unindo alguns trechos de vias existentes.
 São linhas de dificuldade relativamente fácil, sendo um ótimo lugar para treinar técnicas de aderência e trabalhar a mente.',
+<<<<<<< HEAD
                 'endereco' => NULL,
+=======
+>>>>>>> v1.1
                 'latitude' => '',
                 'longitude' => '',
             'comoChegar' => 'Para acessar o Setor Aderência, basta continuar pela trilha do setor Pirilampo (trilha amarela), passar por baixo do bloco caído na saída da via Viaduto. Após passar por esse lance, siga a trilha subindo paralelo ao bloco seguinte.
@@ -65,6 +79,7 @@ Ali é a base da via Super Aderência, onde a primeira proteção é um grampo a
                 'location_id' => 1,
                 'imagem' => '',
             ),
+<<<<<<< HEAD
             3 => 
             array (
                 'id' => 4,
@@ -170,6 +185,8 @@ A caminhada ao cume dura aproximadamente 3:30h e do alto é possível avistar pr
                 'location_id' => 7,
                 'imagem' => '',
             ),
+=======
+>>>>>>> v1.1
         ));
         
         

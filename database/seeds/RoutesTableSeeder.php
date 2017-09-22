@@ -21,6 +21,7 @@ class RoutesTableSeeder extends Seeder
             array (
                 'id' => 1,
                 'created_at' => '2017-08-10 00:20:58',
+<<<<<<< HEAD
                 'updated_at' => '2017-08-10 08:59:09',
                 'sector_id' => 1,
                 'location_id' => 1,
@@ -30,6 +31,16 @@ class RoutesTableSeeder extends Seeder
                 'nome' => 'Bienal',
                 'descricao' => 'Linda via com lances em aderência e regletes seguindo em diagonal para a direita, com excelente movimentação. Escalada com belo visual.',
                 'exposicao' => 'E1',
+=======
+                'updated_at' => NULL,
+                'sector_id' => 1,
+            'conquistadores' => 'Arthur Acastro Egg (Tuco) e Alexandre Lorenzetto (Sassá)',
+                'anoConquista' => 1997,
+                'tipo' => 'Esportiva',
+                'nome' => 'Bienal',
+                'descricao' => 'Linda via com lances em aderência e regletes seguindo em diagonal para a direita, com excelente movimentação. Escalada com belo visual.',
+                
+>>>>>>> v1.1
                 'graduacao' => 'VIIb',
                 'crux' => '',
                 'altura' => '',
@@ -37,13 +48,18 @@ class RoutesTableSeeder extends Seeder
                 'protecao' => 'Chapeletas',
                 'material' => '4 costuras',
                 'dicas' => '',
+<<<<<<< HEAD
                 'croqui' => NULL,
+=======
+                'croqui' => '',
+>>>>>>> v1.1
                 'fonteDados' => 'Guia de Escalada do Morro do Canal',
             ),
             1 => 
             array (
                 'id' => 2,
                 'created_at' => '2017-08-10 00:53:16',
+<<<<<<< HEAD
                 'updated_at' => '2017-08-10 08:59:01',
                 'sector_id' => 2,
                 'location_id' => 2,
@@ -53,6 +69,16 @@ class RoutesTableSeeder extends Seeder
                 'nome' => 'Preamar',
                 'descricao' => '',
                 'exposicao' => '',
+=======
+                'updated_at' => NULL,
+                'sector_id' => 2,
+                'conquistadores' => '',
+                'anoConquista' => 2003,
+                'tipo' => 'Boulder',
+                'nome' => 'Preamar',
+                'descricao' => '',
+                
+>>>>>>> v1.1
                 'graduacao' => 'VIIb',
                 'crux' => '',
                 'altura' => '',
@@ -60,13 +86,18 @@ class RoutesTableSeeder extends Seeder
                 'protecao' => '',
                 'material' => '',
                 'dicas' => '',
+<<<<<<< HEAD
                 'croqui' => NULL,
+=======
+                'croqui' => '',
+>>>>>>> v1.1
                 'fonteDados' => 'Guia de escaladas em rocha - São Francisco do Sul',
             ),
             2 => 
             array (
                 'id' => 3,
                 'created_at' => '2017-08-10 00:54:30',
+<<<<<<< HEAD
                 'updated_at' => '2017-08-10 08:58:11',
                 'sector_id' => 2,
                 'location_id' => 2,
@@ -76,6 +107,16 @@ class RoutesTableSeeder extends Seeder
                 'nome' => 'Fissurados',
                 'descricao' => '',
                 'exposicao' => '',
+=======
+                'updated_at' => NULL,
+                'sector_id' => 2,
+                'conquistadores' => '',
+                'anoConquista' => 2005,
+                'tipo' =>  'Boulder',
+                'nome' => 'Fissurados',
+                'descricao' => '',
+                
+>>>>>>> v1.1
                 'graduacao' => 'VIsup',
                 'crux' => '',
                 'altura' => '',
@@ -83,13 +124,18 @@ class RoutesTableSeeder extends Seeder
                 'protecao' => '',
                 'material' => '',
                 'dicas' => '',
+<<<<<<< HEAD
                 'croqui' => NULL,
+=======
+                'croqui' => '',
+>>>>>>> v1.1
                 'fonteDados' => 'Guia de escaladas em rocha - São Francisco do Sul',
             ),
             3 => 
             array (
                 'id' => 4,
                 'created_at' => '2017-08-10 07:53:46',
+<<<<<<< HEAD
                 'updated_at' => '2017-08-10 08:58:47',
                 'sector_id' => 1,
                 'location_id' => 1,
@@ -99,6 +145,16 @@ class RoutesTableSeeder extends Seeder
                 'nome' => 'Cachorro Loko',
                 'descricao' => 'Via com saída em regletes. Em seguida, passa por um balcão maroto que pode proporcionar belos vôos. Excelente.',
                 'exposicao' => 'E1',
+=======
+                'updated_at' => NULL,
+                'sector_id' => 1,
+            'conquistadores' => 'Carlos Michel (Carlera) e José Luis Verbiski (Capachão)',
+                'anoConquista' => 1998,
+                'tipo' => 1,
+                'nome' => 'Cachorro Loko',
+                'descricao' => 'Via com saída em regletes. Em seguida, passa por um balcão maroto que pode proporcionar belos vôos. Excelente.',
+                
+>>>>>>> v1.1
                 'graduacao' => 'VIIc',
                 'crux' => '',
                 'altura' => '20',
@@ -106,13 +162,18 @@ class RoutesTableSeeder extends Seeder
                 'protecao' => 'Chapeletas',
                 'material' => '5 costuras',
                 'dicas' => '',
+<<<<<<< HEAD
                 'croqui' => NULL,
+=======
+                'croqui' => '',
+>>>>>>> v1.1
                 'fonteDados' => 'Guia de escalada do Morro do Canal',
             ),
             4 => 
             array (
                 'id' => 5,
                 'created_at' => '2017-08-10 08:00:35',
+<<<<<<< HEAD
                 'updated_at' => '2017-08-10 08:58:25',
                 'sector_id' => 3,
                 'location_id' => 1,
@@ -122,6 +183,16 @@ class RoutesTableSeeder extends Seeder
                 'nome' => 'Fábulas e Tragédias',
                 'descricao' => 'Divertida linha em aderência, com dois crux bem definidos na parte mais empinada da parede. Após a última chapa, segue pela rampa em esticão até a parada da via Super Aderência.',
                 'exposicao' => 'E1',
+=======
+                'updated_at' => NULL,
+                'sector_id' => 3,
+                'conquistadores' => 'Andrey Romaniuk e Paulo Haiduke',
+                'anoConquista' => 2013,
+                'tipo' => 1,
+                'nome' => 'Fábulas e Tragédias',
+                'descricao' => 'Divertida linha em aderência, com dois crux bem definidos na parte mais empinada da parede. Após a última chapa, segue pela rampa em esticão até a parada da via Super Aderência.',
+                
+>>>>>>> v1.1
                 'graduacao' => 'V',
                 'crux' => '',
                 'altura' => '30',
@@ -129,6 +200,7 @@ class RoutesTableSeeder extends Seeder
                 'protecao' => 'Chapeletas',
                 'material' => '4 costuras',
                 'dicas' => 'O rapel deve ser feito com corda de 60 metros.',
+<<<<<<< HEAD
                 'croqui' => NULL,
                 'fonteDados' => 'Guia de escalada do Morro do Canal',
             ),
@@ -615,6 +687,11 @@ class RoutesTableSeeder extends Seeder
                 'croqui' => 'uploads/2017-09/faixadegaza.jpg',
                 'fonteDados' => 'Guia de escalada de Brejo da Madre de Deus',
             ),
+=======
+                'croqui' => '',
+                'fonteDados' => 'Guia de escalada do Morro do Canal',
+            ),
+>>>>>>> v1.1
         ));
         
         

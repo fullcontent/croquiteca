@@ -1,95 +1,101 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Data Layer: Simple</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
 
-        <title>Laravel</title>
+      
+    </style>
+   
+  
+  </head>
+  <body>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    <div id="map"></div>
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
+  <script type="text/javascript">
 
-            .full-height {
-                height: 100vh;
-            }
+   var map;
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
 
-            .position-ref {
-                position: relative;
-            }
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 10,
+    center: {lat: -25.5462011, lng: -49.2664437}
+  });
 
-            .content {
-                text-align: center;
-            }
+  // NOTE: This uses cross-domain XHR, and may not work on older browsers.
+  map.data.loadGeoJson(
+      'loadJS');
 
-            .title {
-                font-size: 84px;
-            }
+  var infowindow2 = new google.maps.InfoWindow({maxWidth: 400});
 
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
+            // When the user clicks, open an infowindow
+      map.data.addListener('click', function(event) {
+          var name = event.feature.getProperty("name");
+          var description = event.feature.getProperty("description");
+          var id = event.feature.getProperty("id");
 
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
-                    @endif
-                </div>
-            @endif
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
+ 
+      infowindow2.setContent("<h2>"+name+"</h2><p>"+description+"</p><a href=listaVias/"+id+">Listar Vias</a>");
+          infowindow2.setPosition(event.feature.getGeometry().get());
+      infowindow2.setOptions({pixelOffset: new google.maps.Size(0,-30)});
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </body>
+          infowindow2.open(map);
+          infoWindow.close();
+  });    
+
+
+          var infoWindow = new google.maps.InfoWindow({map: map});
+
+// Try HTML5 geolocation.
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Location found.');
+            map.setCenter(pos);
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+      }
+
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+      }
+
+
+    </script>
+
+
+   
+  </body>
+</html>
+
+ <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmqNd5YuN1V4rvSkoZ8GO1P9Q8g1tnjHM&callback=initMap">
+    </script>
+
+
+  </body>
 </html>

@@ -38,7 +38,7 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', false),
+    'debug' => env('APP_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -77,7 +77,7 @@ return [
     |
     */
 
-    'locale' => 'pt-br',
+    'locale' => 'pt_br',
 
     /*
     |--------------------------------------------------------------------------
@@ -90,7 +90,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'pt-br',
+    'fallback_locale' => 'pt_br',
 
     /*
     |--------------------------------------------------------------------------
@@ -177,8 +177,12 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+<<<<<<< HEAD
         Orangehill\Iseed\IseedServiceProvider::class
 
+=======
+        crocodicstudio\crudbooster\CRUDBoosterServiceProvider::class,
+>>>>>>> v1.1
 
 
     ],
