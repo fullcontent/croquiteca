@@ -27,6 +27,10 @@ public function city(){
 public function state(){
 
 	return $this->belongsTo('App\Models\State');
+	
+
+	
+	
 }
 
 

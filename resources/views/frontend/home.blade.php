@@ -7,7 +7,7 @@
 
 @section('content')
 
-
+<div class="container">
 <div class="row box1">
             <div class="col-md-8">
                 <h3>Últimas vias adicionadas:</h3>
@@ -46,36 +46,56 @@
 			
             <div class="col-md-3 lista-locais">
                 
+
                 
 
-                @foreach($states as $s)                
+               <?php 
+
+               $limit = 6;
+
+               $firstStates = $states->slice(0,$limit); ?>
+
+
+                @foreach($firstStates as $s)
+
                 <div id="location">
-                        <a href="{{$s->name}}" class="text-muted"><h3>{{$s->name}}</h3></a>
-                    <ul class="list-unstyled lista-locais">
+                        <a href="<?=url('');?>/locais/{{$s->id}}" class="text-muted"><h3>{{$s->name}}</h3></a>
+                            <ul class="list-unstyled lista-locais" style="line-height: 1.2;">
 
                         @foreach($s->locations as $l)
-                        <a href="setor/{{$l->id}}" class="text-muted"><li>{{$l->nome}}<span class="number"></span></li></a>
+                        <a href="local/{{$l->id}}" class="text-muted"><li>{{$l->nome}}<span class="number"></span></li></a>
                         @endforeach
                         
 
                     </ul>
                 </div>
                 @endforeach
-                
-                
-               
+
             </div>
-           
+            <div class="col-md-9 map" id="map">
                @include('frontend.map')
-           
+           </div>
 </div>
 
-<div class="row">
-                
-				
-              
-               
-</div>
+ <div class="row" style="margin-top: 20px;">
 
+            <?php $lastStates = $states->slice($limit,20); ?>
+
+            @foreach($lastStates as $s)
+            <div class="col-md-2">
+                <a href="{{$s->name}}" class="text-muted"><h3>{{$s->name}}</h3></a>
+                            <ul class="list-unstyled lista-locais">
+
+                        
+                        <a href="setor/{{$l->id}}" class="text-muted"><li>{{$l->nome}}<span class="number"></span></li></a>
+                        
+                        
+
+                    </ul>
+            </div>
+            @endforeach
+
+</div>
+</div>
 
 @endsection

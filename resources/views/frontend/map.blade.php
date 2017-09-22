@@ -21,7 +21,7 @@
 
 
  
-          infowindow2.setContent("<h4>"+name+"</h4><a href=<?=url('/locais')?>/"+id+">"+routes_count+" Vias</a>");
+          infowindow2.setContent("<h4>"+name+"</h4><a href=<?=url('/local')?>/"+id+">"+routes_count+" Vias</a>");
           infowindow2.setPosition(event.feature.getGeometry().get());
           infowindow2.setOptions({pixelOffset: new google.maps.Size(0,-30)});
 
@@ -68,4 +68,4 @@ if (navigator.geolocation) {
      
     </script>
 
-    <div class="col-md-9 map" id="map"></div>
+   

@@ -70,8 +70,6 @@
                 		  		$("#input-latitude-{{$name}}").val(latitude_temp_{{$name}});
 						        $("#input-longitude-{{$name}}").val(longitude_temp_{{$name}});	
 
-
-
 						        $("#latitude").val(latitude_temp_{{$name}});
 						        $("#longitude").val(longitude_temp_{{$name}});
                 		    }

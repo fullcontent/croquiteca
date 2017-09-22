@@ -6,10 +6,11 @@
   
   
   <link rel="stylesheet" href="<?=url('assets/bootstrap/css/bootstrap.min.css')?>">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+   
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
     <link rel="stylesheet" href="<?=url('assets/css/styles.css')?>">
-    <link rel="stylesheet" href="<?=url('assets/css/Pretty-Footer.css')?>">
+    <link rel="stylesheet" href="<?=url('assets/css/footer.css')?>">
+    
 
 <!-- =======================================================
     Theme Name: Techie
@@ -19,13 +20,7 @@
 ======================================================= -->
 
   <!-- Docs Custom styles -->
- <style>
-   
-   #map{
-    height: 450px;
-    
-  }
- </style>
+
   
 </head>
 <body>
@@ -38,7 +33,9 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav">
-                        <li class="{{ Request::path() == '/' ? 'active' : '' }}" role="presentation"><a href="<?=url('/')?>">Guia </a></li>
+                        <li class="{{ Request::path() == '/' ? 'active' : '' }}" role="presentation"><a href="<?=url('/')?>">Guia</a></li>
+
+                        <li class="{{ Request::path() == 'mapa' ? 'active' : '' }}" role="presentation"><a href="<?=url('/mapa')?>">Mapa</a></li>
                         
                         
                     </ul>
@@ -53,17 +50,27 @@
 
   
 		
-<div class="container">@yield('content')</div>
+@yield('content')
 
 
 
-
-
+<hr>
  <div class="clearfix"></div>
     <footer>
-        <p>@2017 OndeEscalar.com.br</p>
+        <div class="container">
+            <div class="col-md-8">
+                <ul class="list-inline">
+                    <li>Ajuda</li>
+                    <li>Termos de uso</li>
+                    <li>Politica de Privacidade</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <p class="text-right">@2017 - OndeEscalar</p>
+            </div>
+        </div>
     </footer>
-<script src="<?=url('assets/js/jquery.js')?>"></script>
+<script src="<?=url('assets/js/jquery.min.js')?>"></script>
 <script src="<?=url('assets/js/bootstrap.min.js')?>"></script>
 
 

@@ -24,6 +24,7 @@ class HomePageController extends Controller
 
         $states = State::whereHas('locations')->with('locations')->orderBy('name')->get();
 
+
         $locations = Location::whereHas('sectors')->with('sectors')->get();
 
 
@@ -34,6 +35,58 @@ class HomePageController extends Controller
 
 	}
 
+
+
+
+    public function Mapa()
+        {
+            return view('frontend.mapa');
+        }
+
+    public function Local($id='')
+        {
+
+
+
+            $location = Location::where('id',$id)->get()->first();
+            $routes = Route::where('location_id',$id)->with('sector')->get();
+
+            return view('frontend.local')->with(['routes'=>$routes,'location'=>$location]);
+        }     
+
+
+    public function LocalSetores($id='')
+        {
+            $sectors = Sector::where('location_id',$id)->withCount('routes')->get();
+
+
+            $location = Location::where('id',$id)->get()->first();
+
+               return view('frontend.setores')->with(['location'=>$location,'sectors'=>$sectors]);
+        }
+
+    public function Via($id='')
+        {
+            $route = Route::find($id);
+
+            $location = Location::with('city')->find($route->location_id);
+
+
+            $nextRoutes = Route::where('location_id',$route->location_id)->get();
+
+
+            return view('frontend.via')->with(['route'=>$route,'location'=>$location,'nextRoutes'=>$nextRoutes]);
+        }
+
+    public function Locais($id='')
+        {
+            
+            $locations = State::where('id',$id)->with('locations')->first();
+
+            return view('frontend.locais')->with(['locations'=>$locations]);
+
+
+        }    
 
     public function pesquisar(){
 
@@ -53,7 +106,7 @@ class HomePageController extends Controller
                         ->orWhere('sectors.descricao','like','%'.Input::get('texto').'%')
                         ->orWhere('cities.name','like','%'.Input::get('texto').'%')
                         ->orWhere('states.name','like','%'.Input::get('texto').'%')
-                        ->get();
+                        ->paginate(5)->appends('texto', request('texto'));
 
         return view('frontend.pesquisa',compact('pesquisa'));
     }

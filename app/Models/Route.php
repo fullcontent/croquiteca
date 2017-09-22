@@ -7,12 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Route extends Model
 {
     
-    public function route(){
+    public function sector(){
 
     	return $this->belongsTo('App\Models\Sector');
     }
-
-
-    
 
 }

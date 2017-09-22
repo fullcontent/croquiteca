@@ -5,8 +5,12 @@
 
 @section('content')
 
-	<h1>Resultado da Pesquisa:</h1>
 	
+	
+    <div class="container">
+
+    <h1>Resultado da Pesquisa:</h1>
+
     <div class="col-sm-4 col-md-12">
           
             
@@ -43,8 +47,8 @@
                @endforeach
               </tbody>
             </table>          
-         
+         {!! $pesquisa->render() !!}
 </div>          
 
-
+</div>
 @endsection
