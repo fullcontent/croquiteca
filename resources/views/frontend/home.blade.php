@@ -69,7 +69,7 @@
 
                     </ul>
                 </div>
-                @endforeach
+                @endforeachw
 
             </div>
             <div class="col-md-9 map" id="map">
