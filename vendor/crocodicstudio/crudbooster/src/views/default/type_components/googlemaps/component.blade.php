@@ -68,7 +68,11 @@
                 		  		console.log(address_temp_{{$name}});
                 		  		$('#{{$name}}').val(address_temp_{{$name}});
                 		  		$("#input-latitude-{{$name}}").val(latitude_temp_{{$name}});
-						        $("#input-longitude-{{$name}}").val(longitude_temp_{{$name}});	
+						        $("#input-longitude-{{$name}}").val(longitude_temp_{{$name}});
+
+						        $("#latitude").val(latitude_temp_{{$name}});
+
+						        $("#longitude").val(longitude_temp_{{$name}});	
                 		    }
 
                 			var is_init_map_{{$name}} = false;
