@@ -15,7 +15,7 @@ class CreateRoutesTable extends Migration
     {
         Schema::create('routes',function(Blueprint $table){
             $table->increments('id');
-            $table->timestamps();
+            $table->nullableTimestamps();
 
             $table->integer('sector_id')->unsigned();
             $table->foreign('sector_id')->references('id')->on('sectors');
@@ -25,12 +25,12 @@ class CreateRoutesTable extends Migration
 
 
             $table->text('conquistadores')->nullable();
-            $table->integer('anoConquista')->nullable();
-            $table->enum('tipo', ['Esportiva','Boulder','Tradicional']);
+            $table->string('anoConquista',255)->nullable();
+            $table->string('tipo')->default('Esportiva');
             
             $table->string('nome',100);
             $table->text('descricao');
-            $table->enum('exposicao', ['E1', 'E2', 'E3' , 'E4', 'E5', 'E6','E7','E8']);    
+            $table->string('exposicao', 2);    
             
             $table->string('graduacao',5);
             $table->string('crux',5);

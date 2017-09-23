@@ -158,8 +158,8 @@ class RoutesTableSeeder extends Seeder
             6 => 
             array (
                 'id' => 20,
-                'created_at' => '0000-00-00 00:00:00',
-                'updated_at' => '0000-00-00 00:00:00',
+                'created_at' => '2017-08-15 16:24:15',
+                'updated_at' => '2017-08-15 16:24:15',
                 'sector_id' => 9,
                 'location_id' => 5,
                 'conquistadores' => 'Carlos Alberto, Leonardo, Luciano, Margarida e Santa Cruz',
@@ -181,8 +181,8 @@ class RoutesTableSeeder extends Seeder
             7 => 
             array (
                 'id' => 47,
-                'created_at' => '0000-00-00 00:00:00',
-                'updated_at' => '0000-00-00 00:00:00',
+                'created_at' => '2017-08-15 16:24:15',
+                'updated_at' => '2017-08-15 16:24:15',
                 'sector_id' => 9,
                 'location_id' => 5,
                 'conquistadores' => 'Jacques Cardeman, Pedro Ary, Sérgio Gonçalves e Daniel Gonçalves. ',
@@ -204,8 +204,8 @@ class RoutesTableSeeder extends Seeder
             8 => 
             array (
                 'id' => 54,
-                'created_at' => '0000-00-00 00:00:00',
-                'updated_at' => '0000-00-00 00:00:00',
+                'created_at' => '2017-08-15 16:24:15',
+                'updated_at' => '2017-08-15 16:24:15',
                 'sector_id' => 9,
                 'location_id' => 5,
                 'conquistadores' => 'Jacques Cardeman, Yuri Marx, Cristian Chagas e Michel Cipolatti. ',
@@ -227,8 +227,8 @@ class RoutesTableSeeder extends Seeder
             9 => 
             array (
                 'id' => 151,
-                'created_at' => '0000-00-00 00:00:00',
-                'updated_at' => '0000-00-00 00:00:00',
+                'created_at' => '2017-08-15 16:24:15',
+                'updated_at' => '2017-08-15 16:24:15',
                 'sector_id' => 9,
                 'location_id' => 5,
                 'conquistadores' => '',
@@ -250,8 +250,8 @@ class RoutesTableSeeder extends Seeder
             10 => 
             array (
                 'id' => 156,
-                'created_at' => '0000-00-00 00:00:00',
-                'updated_at' => '0000-00-00 00:00:00',
+                'created_at' => '2017-08-15 16:24:15',
+                'updated_at' => '2017-08-15 16:24:15',
                 'sector_id' => 9,
                 'location_id' => 5,
                 'conquistadores' => 'Carlos Bernardo e Salomyth Fernandes',
@@ -273,8 +273,8 @@ class RoutesTableSeeder extends Seeder
             11 => 
             array (
                 'id' => 192,
-                'created_at' => '0000-00-00 00:00:00',
-                'updated_at' => '0000-00-00 00:00:00',
+                'created_at' => '2017-08-15 16:24:15',
+                'updated_at' => '2017-08-15 16:24:15',
                 'sector_id' => 9,
                 'location_id' => 5,
                 'conquistadores' => 'Giuseppe Pellegrini e Reinaldo Pires',
@@ -296,8 +296,8 @@ class RoutesTableSeeder extends Seeder
             12 => 
             array (
                 'id' => 194,
-                'created_at' => '0000-00-00 00:00:00',
-                'updated_at' => '0000-00-00 00:00:00',
+                'created_at' => '2017-08-15 16:24:15',
+                'updated_at' => '2017-08-15 16:24:15',
                 'sector_id' => 9,
                 'location_id' => 5,
                 'conquistadores' => 'Félis Pires e Luiz Otávio Cardoso',
@@ -319,8 +319,8 @@ class RoutesTableSeeder extends Seeder
             13 => 
             array (
                 'id' => 229,
-                'created_at' => '0000-00-00 00:00:00',
-                'updated_at' => '0000-00-00 00:00:00',
+                'created_at' => '2017-08-15 16:24:15',
+                'updated_at' => '2017-08-15 16:24:15',
                 'sector_id' => 9,
                 'location_id' => 5,
                 'conquistadores' => 'André Ilha e Gabriel Fonseca',
@@ -342,8 +342,8 @@ class RoutesTableSeeder extends Seeder
             14 => 
             array (
                 'id' => 249,
-                'created_at' => '0000-00-00 00:00:00',
-                'updated_at' => '0000-00-00 00:00:00',
+                'created_at' => '2017-08-15 16:24:15',
+                'updated_at' => '2017-08-15 16:24:15',
                 'sector_id' => 9,
                 'location_id' => 5,
                 'conquistadores' => 'Antônio Carlos Magalhães, Ricardo de Morais Almeida e Anthony David Adler',
@@ -365,8 +365,8 @@ class RoutesTableSeeder extends Seeder
             15 => 
             array (
                 'id' => 250,
-                'created_at' => '0000-00-00 00:00:00',
-                'updated_at' => '0000-00-00 00:00:00',
+                'created_at' => '2017-08-15 16:24:15',
+                'updated_at' => '2017-08-15 16:24:15',
                 'sector_id' => 9,
                 'location_id' => 5,
                 'conquistadores' => 'Antonio Carlos Magalhães e Paulo Roberto. P. Ferreira',
@@ -388,8 +388,8 @@ class RoutesTableSeeder extends Seeder
             16 => 
             array (
                 'id' => 332,
-                'created_at' => '0000-00-00 00:00:00',
-                'updated_at' => '0000-00-00 00:00:00',
+                'created_at' => '2017-08-15 16:24:15',
+                'updated_at' => '2017-08-15 16:24:15',
                 'sector_id' => 9,
                 'location_id' => 5,
                 'conquistadores' => 'Cláudio Fon-Fon Fontenelle, Eduardo Hutter, Félis Pires, Luís Carlos, Márcia Leuzinger e Paulo Roberto Rosa',
@@ -411,8 +411,8 @@ class RoutesTableSeeder extends Seeder
             17 => 
             array (
                 'id' => 333,
-                'created_at' => '0000-00-00 00:00:00',
-                'updated_at' => '0000-00-00 00:00:00',
+                'created_at' => '2017-08-15 16:24:15',
+                'updated_at' => '2017-08-15 16:24:15',
                 'sector_id' => 9,
                 'location_id' => 5,
                 'conquistadores' => 'Daniel Alvarenga, Felipe Alvarenga, Luis Sayão, Maurício Abdu e Oswaldo Pereira',
@@ -434,8 +434,8 @@ class RoutesTableSeeder extends Seeder
             18 => 
             array (
                 'id' => 350,
-                'created_at' => '0000-00-00 00:00:00',
-                'updated_at' => '0000-00-00 00:00:00',
+                'created_at' => '2017-08-15 16:24:15',
+                'updated_at' => '2017-08-15 16:24:15',
                 'sector_id' => 9,
                 'location_id' => 5,
                 'conquistadores' => 'Mario Arnaud',
@@ -457,8 +457,8 @@ class RoutesTableSeeder extends Seeder
             19 => 
             array (
                 'id' => 351,
-                'created_at' => '0000-00-00 00:00:00',
-                'updated_at' => '0000-00-00 00:00:00',
+                'created_at' => '2017-08-15 16:24:15',
+                'updated_at' => '2017-08-15 16:24:15',
                 'sector_id' => 9,
                 'location_id' => 5,
                 'conquistadores' => 'Felipe Alvarenga, Ricardo Borges, Ricardo Prado e Oswaldo Santa Cruz Pereira',
@@ -480,8 +480,8 @@ class RoutesTableSeeder extends Seeder
             20 => 
             array (
                 'id' => 357,
-                'created_at' => '0000-00-00 00:00:00',
-                'updated_at' => '0000-00-00 00:00:00',
+                'created_at' => '2017-08-15 16:24:15',
+                'updated_at' => '2017-08-15 16:24:15',
                 'sector_id' => 9,
                 'location_id' => 5,
                 'conquistadores' => 'Luis Sayão, Marli Ignés e Oswaldo Santa Cruz Pereira',
@@ -503,8 +503,8 @@ class RoutesTableSeeder extends Seeder
             21 => 
             array (
                 'id' => 360,
-                'created_at' => '0000-00-00 00:00:00',
-                'updated_at' => '0000-00-00 00:00:00',
+                'created_at' => '2017-08-15 16:24:15',
+                'updated_at' => '2017-08-15 16:24:15',
                 'sector_id' => 9,
                 'location_id' => 5,
                 'conquistadores' => 'Alexandre Becker',
@@ -526,8 +526,8 @@ class RoutesTableSeeder extends Seeder
             22 => 
             array (
                 'id' => 361,
-                'created_at' => '0000-00-00 00:00:00',
-                'updated_at' => '0000-00-00 00:00:00',
+                'created_at' => '2017-08-15 16:24:15',
+                'updated_at' => '2017-08-15 16:24:15',
                 'sector_id' => 9,
                 'location_id' => 5,
                 'conquistadores' => 'Carlos Constanza, Hélio Barroso, José Vargas e Luiz Constanza ',
@@ -549,8 +549,8 @@ class RoutesTableSeeder extends Seeder
             23 => 
             array (
                 'id' => 413,
-                'created_at' => '0000-00-00 00:00:00',
-                'updated_at' => '0000-00-00 00:00:00',
+                'created_at' => '2017-08-15 16:24:15',
+                'updated_at' => '2017-08-15 16:24:15',
                 'sector_id' => 9,
                 'location_id' => 5,
                 'conquistadores' => 'Jorge Campos Jr, Paulo Baldner e Ricardo Teixeira',
@@ -572,8 +572,8 @@ class RoutesTableSeeder extends Seeder
             24 => 
             array (
                 'id' => 653,
-                'created_at' => '0000-00-00 00:00:00',
-                'updated_at' => '0000-00-00 00:00:00',
+                'created_at' => '2017-08-15 16:24:15',
+                'updated_at' => '2017-08-15 16:24:15',
                 'sector_id' => 9,
                 'location_id' => 5,
                 'conquistadores' => 'Alfredo Neto e João Antônio',

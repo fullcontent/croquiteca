@@ -19,7 +19,7 @@ class CreateSectorsTable extends Migration
      
            $table->string('nome',100);
            $table->text('descricao');
-           $table->text('endereco');
+           $table->text('endereco')->nullable();
 
            $table->string('latitude')->nullable();
            $table->string('longitude')->nullable();
