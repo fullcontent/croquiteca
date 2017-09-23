@@ -20,7 +20,7 @@ class CreateLocationsTable extends Migration
             $table->string('tipoRocha');
             $table->integer('cidade_id')->unsigned();
             $table->foreign('cidade_id')->references('id')->on('cities');
-
+            $table->text('endereco');
 
 
 

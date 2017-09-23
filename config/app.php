@@ -178,6 +178,9 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         crocodicstudio\crudbooster\CRUDBoosterServiceProvider::class,
+        Orangehill\Iseed\IseedServiceProvider::class,
+
+
 
 
     ],

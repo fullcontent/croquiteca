@@ -20,6 +20,10 @@ class CreateRoutesTable extends Migration
             $table->integer('sector_id')->unsigned();
             $table->foreign('sector_id')->references('id')->on('sectors');
 
+            $table->integer('location_id')->unsigned();
+            $table->foreign('location_id')->references('id')->on('locations');    
+
+
             $table->text('conquistadores')->nullable();
             $table->integer('anoConquista')->nullable();
             $table->enum('tipo', ['Esportiva','Boulder','Tradicional']);

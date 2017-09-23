@@ -69,6 +69,8 @@ class HomePageController extends Controller
         {
             $route = Route::find($id);
 
+            dd($route);
+
             $location = Location::with('city')->find($route->location_id);
 
 
