@@ -12,7 +12,9 @@
         <div class="banner">
             <div class="overlay"></div><img src="<?php if($location->imagem){echo url($location->imagem);}else { echo url('assets/img/63UT_135241_533423967.jpg'); }?>" class="banner-img"></div>
         <div class="info">
-            <div class="container">
+            
+            
+            <div class="container"><a href="javascript: history.go(-1)" class="voltar">&lt; VOLTAR PARA LOCAIS</a>
                 <h1 class="info">{{$location->nome}}</h1></div>
         </div>
     </section>

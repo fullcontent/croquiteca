@@ -10,13 +10,15 @@
 
  <section class="banner">
         <div class="banner">
-            <div class="overlay"></div><img src="<?php if($locations->imagem){echo url($locations->imagem);}else { echo url('assets/img/63UT_135241_533423967.jpg'); }?>" class="banner-img"></div>
+            <div class="overlay"></div><img src="<?php $firstImg = $locations->locations->random(1)->first();  if($firstImg->imagem){echo url($firstImg->imagem);}else { echo url('assets/img/63UT_135241_533423967.jpg'); }?>" class="banner-img"></div>
         <div class="info">
-            <div class="container">
+            <div class="container"><a href="<?=url('')?>/" class="voltar">&lt; VOLTAR PARA GUIA</a>
                 <h1 class="info">{{$locations->name}}</h1></div>
         </div>
     </section>
    
+
+
     <div class="container">
        
         <div class="row">

@@ -69,12 +69,10 @@ class HomePageController extends Controller
         {
             $route = Route::find($id);
 
-            dd($route);
+            
 
             $location = Location::with('city')->find($route->location_id);
-
-
-            $nextRoutes = Route::where('location_id',$route->location_id)->get();
+            $nextRoutes = Route::where('location_id',$route->location_id)->take(5)->inRandomOrder()->get();
 
 
             return view('frontend.via')->with(['route'=>$route,'location'=>$location,'nextRoutes'=>$nextRoutes]);

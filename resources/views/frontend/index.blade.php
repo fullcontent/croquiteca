@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
     <link rel="stylesheet" href="<?=url('assets/css/styles.css')?>">
     <link rel="stylesheet" href="<?=url('assets/css/footer.css')?>">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 
 <!-- =======================================================
